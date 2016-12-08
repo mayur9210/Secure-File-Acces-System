@@ -1,0 +1,71 @@
+<!-- 
+    Document   : admin
+    Created on : Mar 22, 2013, 10:35:27 AM
+    Author     : santosh
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <style type = "text/css">
+      body {background-image: url(bg.png);}
+  </style>
+<script>
+          function compose(f1)
+          {
+              f1.action="compose.jsp";
+              f1.submit();
+              }
+              function inbox(f1)
+          {
+              f1.action="inbox.jsp";
+              f1.submit();
+              }
+              function upload(f1)
+          {
+              f1.action="upload.html";
+              f1.submit();
+              }
+              function upload1(f1)
+              
+              {
+                f1.action="uploadimage.jsp";
+                f1.submit();
+                  
+              }
+              function assignment(f1)
+              {
+                  f1.action="assignment.html";
+                  f1.submit();
+              }
+              function changepw(f1)
+              {
+                  f1.action="changepw.html";
+                  f1.submit();
+              }
+              function delete1(f1)
+              {
+                  f1.action="assdel.html";
+                  f1.submit();
+              }
+        
+        </script>
+  </head>
+  <body>
+      <center><h1>ADMIN PAGE</h1></center>
+      <center>
+          <form name="f1">
+              <tr>
+                <th><input type="button" name="b1" value="COMPOSE" onclick="compose(this.form)"></th><br/><br/>
+                 <th><input type="button" name="b7" value="INBOX" onclick="inbox(this.form)"></th><br/><br/>
+                  <th><input type="button" name="b2" value="UPLOAD.TXT" onclick="upload(this.form)"></th><br/><br/>
+                    <th><input type="button" name="b3" value="UPLOAD.IMAGE" onclick="upload1(this.form)"></th><br/><br/>
+                      <th><input type="button" name="b4" value="CHANGEPASSWD" onclick="changepw(this.form)"></th><br/><br/>
+                        <th><input type="button" name="b5" value="ASSIGNMENT" onclick="assignment(this.form)"></th><br/><br/>
+                            <th><input type="button" name="b6" value="DELETE" onclick="delete1(this.form)"></th><br/>
+                        
+                  </tr>
+                  
+          </form>
+</center>
+ </body>
+</html>

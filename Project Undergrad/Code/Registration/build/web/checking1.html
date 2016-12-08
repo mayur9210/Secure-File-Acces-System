@@ -1,0 +1,67 @@
+<!-- 
+    Document   : checking1
+    Created on : Apr 8, 2013, 7:53:50 PM
+    Author     : santosh
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+      <script>
+          function compose(f1)
+          {
+              f1.action="compose.jsp";
+              f1.submit();
+              }
+              function inbox(f1)
+          {
+              f1.action="inbox.jsp";
+              f1.submit();
+              }
+               function file(f1)
+          {
+              f1.action="abc1.jsp";
+              f1.submit();
+              }
+              function download(f1)
+              
+              {
+                f1.action="filecheck.jsp";
+                f1.submit();
+                  
+              }   
+                function changepw(f1)
+              
+              {
+                f1.action="changepw.html";
+                f1.submit();
+                  
+              }  
+              function list(f1)
+              
+              {
+                f1.action="search.html";
+                f1.submit();
+                  
+              }   
+        </script>
+       <style type = "text/css">
+      body {background-image: url(bg.png);}
+  </style>
+  </head>
+   <body><center>
+           <center><h1>LOGIN PAGE</h1></center>      
+     <form name="f1">
+         <br/><br/>
+ 
+   <p>
+        
+    <th><input type="button" name="b1"  value="COMPOSE" onclick="compose(this.form)"></th><br/><br/>
+    <th><input type="button" name="b2" value="INBOX" onclick="inbox(this.form)"></th><br/><br/>
+    <th><input type="button" name="b5" value="FILE DETAILS" onclick="file(this.form)"></th><br/><br/>
+    <th><input type="button" name="b3" value="DOWNLOAD" onclick="download(this.form)"></th><br/><br/>
+    <th><input type="button" name="b4" value="CHANGEPASSWORD" onclick="changepw(this.form)"></th><br/><br/>
+     <th><input type="button" name="b6" value="LIST OF USERS" onclick="list(this.form)"></th>
+    </p>
+</center>
+ </body>
+</html>

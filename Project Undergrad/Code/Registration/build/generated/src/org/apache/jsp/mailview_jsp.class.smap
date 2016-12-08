@@ -1,0 +1,18 @@
+SMAP
+mailview_jsp.java
+JSP
+*S JSP
+*F
++ 0 mailview.jsp
+mailview.jsp
+*L
+5,14:53
+19,6:12
+24,2:67
+26,11:70
+36,6:81
+42:87,3
+43,9:90
+52:99,3
+53,23:102
+*E

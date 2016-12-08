@@ -1,0 +1,191 @@
+<!-- 
+    Document   : reg
+    Created on : Mar 1, 2013, 10:11:42 AM
+    Author     : santosh
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>REGISTRATION</title>
+     <style type = "text/css">
+      body {background-image: url(bg.png);}
+      p {margin-left: 100px; margin-right: 200px;
+         margin-top: 100px; font-size: 15pt;}
+    </style>
+    <script>
+        function valid1(f1)
+        {
+            var x1,x2,x3,x4,x5,x6,x7,x8,x9;
+           
+       x1=f1.t1.value;x2=f1.t2.value;x3=f1.t3.value;x4=f1.t4.value;x5=f1.t5.value;x6=f1.t6.value;
+       if(x1=="")
+                    {
+                        alert("Enter User_ID");
+                   x1.value.focus;
+                        return false;
+                        
+                     }
+                 else if(x2=="")
+                     {
+                         alert("Enter password");
+                         x2.value.focus();
+                        return false;
+                         }
+                else if(x3==="")
+                     {
+                         alert("Enter Name");
+                         x3.value.focus();
+                        return false;
+                         }
+                else if(x4=="")
+                     {
+                         alert("Enter DOB ");
+                         x4.value.focus();
+                        return false;
+                         }
+                else if(x5=="")
+                     {
+                         alert("Enter Mobile number");
+                         x5.value.focus();
+                        return false;
+                         }
+                    else if(x6=="")
+                     {
+                         alert("Enter address");
+                         x6.value.focus();
+                        return false;
+                         }
+                          else if (!isAlphabet(x3))
+           {
+            alert("Name should be alphbets only");   
+            return false;
+           }    
+           
+          else if (!isAlphanumeric(x2))
+           {
+            alert("Password should be alphabet and numeric only");
+            return false;
+           }    
+       else if (!isAlphanumeric(x1))
+           {
+            alert("User_ID should be alphabet and numeric only");
+            return false;
+           }     
+              
+             else if (!isNumeric(x4))
+              {
+                  alert("DOB should be numeric  only");  
+                  return false;
+              }    
+              
+              else if (!isNumeric(x5))
+              {
+                  alert("Mobile should be numeric  only");  
+                  return false;
+              } 
+               else if (!isAlphabet(x6))
+           {
+            alert("Name should be alphbets only");   
+      return false;
+           
+           }    
+
+     f1.action="reg.jsp";
+     f1.submit();
+}
+
+function isNumeric(value1){
+	var numericExpression = /^[0-9.]+$/;
+	if(value1.match(numericExpression))
+             {
+		return true;
+	}
+         else{
+		//alert("improper");
+		
+		return false;
+	}
+}
+ function isAlphabet(value1)
+ {
+	var alphaExp = /^[a-zA-Z ]+$/; 
+	if(value1.match(alphaExp))
+             {
+		return true;
+	}
+         else{
+		//alert("improper");
+	
+		return false;
+	}
+}
+ function isAlphanumeric(value1)
+ {
+	var alphaExp = /^[0-9a-zA-Z ]+$/;
+	if(value1.match(alphaExp)){
+		return true;
+	}else{
+		//alert("improper");
+		
+		return false;
+	}
+         
+    } 
+                         
+                        
+                
+   
+    </script>
+  </head>
+  <body>
+      <center>
+          <h1>REGISTRATION</h1>
+          <br/><br/><br/>
+          <form name="f1" action="">
+               
+          <table>
+               <p>
+              <tr>
+                 
+              <th>USERID:</th>
+              <th><input type="text" name="t1" value=""></th>
+               
+                 </tr>
+           
+                <tr>
+                <th>PASSWORD:</th>
+                 <th><input type="password" name="t2" value=""></th>
+                </tr>
+                
+                 <tr>
+                 <th>NAME:</th>
+                  <th><input type="text" name="t3" value=""</th>
+                 </tr>
+         
+                  <tr>
+                  <th>DOB:</th>
+                    <th><input type="text" name="t4" value=""></th>
+         
+                    <tr>
+                     <th>MOBILE NO:</th>
+                      <th><input type="text" name="t5" value=""></th>
+                      </tr>
+        
+                     <tr>
+                        <th>ADDRESS:</th>
+                      <th><input type="textarea" name="t6" value=""></th>
+                     </tr>
+                 
+                        <tr>
+                            
+                         <th><input type = "reset"  value = "Clear Form" ></th>
+                          <th> <input type="button" value="submit" onclick="valid1(this.form)"></th>
+                     </tr>
+                     </p>
+                     </table>  
+                 
+                </form>
+        </center>         
+        
+  </body>
+</html>
