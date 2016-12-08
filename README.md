@@ -6,10 +6,10 @@ INTRODUCTION
 The main aim of the project is to provide the user with secured file access system. Files are stored on cloud with security keys and user can download files from cloud to the destination mobile using internet services. When file is downloaded message is sent to user from cloud.
 
 Some features of this application
-• Prevents unauthorized access.
-• Uploading files on cloud with security keys enables greater security.
-• User can download files while is on way or on work using mobile.
-• Allow group of registered users to communicate through mails and share the data.
+Prevents unauthorized access.
+Uploading files on cloud with security keys enables greater security.
+User can download files while is on way or on work using mobile.
+Allow group of registered users to communicate through mails and share the data.
 
 
 1.2 Chapter wise summary
